@@ -1,0 +1,36 @@
+{
+  "name": "html2rss",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Tool for conversion basic HTML pages to RSS XML.",
+  "author": "Jan Krivohlavek",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/krajvy/html2rss/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krajvy/html2rss.git"
+  },
+  "scripts": {
+    "build": "rm -rf dist/* && tsc",
+    "generate": "rm -rf build/* && cp public/* build && node dist/index.js",
+    "start": "npm run build && npm run generate",
+    "format-check": "prettier --check .",
+    "format-fix": "prettier --write ."
+  },
+  "engines": {
+    "node": "^20",
+    "npm": "^10"
+  },
+  "dependencies": {
+    "jsdom": "^25.0.1"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^21.1.7",
+    "@types/node": "^16.18.119",
+    "prettier": "^3.3.3",
+    "typescript": "^4.9.5"
+  }
+}
