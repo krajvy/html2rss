@@ -1,0 +1,33 @@
+name: Pull Request Workflow
+
+on:
+  pull_request:
+
+jobs:
+  commit-linter:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Commit Message Linter
+        if: github.actor != 'dependabot[bot]' && github.actor != 'dependabot-preview[bot]'
+        uses: wagoid/commitlint-github-action@v6
+        # https://github.com/wagoid/commitlint-github-action
+        # https://commitlint.js.org/#/reference-configuration
+        # https://github.com/conventional-changelog/commitlint/tree/master/@commitlint/config-conventional
+        with:
+          failOnWarnings: true
+
+      - name: No Fixup Commits
+        uses: 13rac1/block-fixup-merge-action@v2.0.0
+
+  npm-install-dependencies:
+    uses: krajvy/html2rss/.github/workflows/npm_install.yml@main
+
+  test-unit-npm:
+    uses: krajvy/html2rss/.github/workflows/test_unit_npm.yml@main
+    needs:
+      - npm-install-dependencies
