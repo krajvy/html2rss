@@ -2,7 +2,7 @@ import { URLS } from './const.js';
 import { generateFeed } from './generator/generateFeed.js';
 import { generateFile } from './generator/generateFile.js';
 import { generateStats } from './generator/generateStats.js';
-import { getDataFromHTML, getChannelInfo } from './parser/index.js';
+import { getDataFromHTML } from './parser/getDataFromHTML.js';
 
 const main = async () => {
   for await (const record of URLS) {
@@ -17,10 +17,7 @@ const main = async () => {
         return await response.text();
       })
       .then((source) => {
-        return generateFeed({
-          channel: getChannelInfo(record, source),
-          items: getDataFromHTML(record, source),
-        });
+        return generateFeed(getDataFromHTML(record, source));
       })
       .then((rssFeed) => {
         if (rssFeed !== '') {
