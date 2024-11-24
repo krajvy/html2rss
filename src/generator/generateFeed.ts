@@ -61,8 +61,15 @@ export const generateFeed = (feedData: Feed): string => {
       // <pubDate>
       if (feedItem.datetime) {
         const itemPubDate = document.createElement('pubDate');
-        itemPubDate.textContent = '';
+        itemPubDate.textContent = feedItem.datetime;
         item.appendChild(itemPubDate);
+      }
+      // <guid isPermaLink="false">
+      if (feedItem.guid) {
+        const itemGuid = document.createElement('guid');
+        itemGuid.setAttribute('isPermaLink', 'false');
+        itemGuid.textContent = feedItem.guid;
+        item.appendChild(itemGuid);
       }
 
       // Append item to channel
