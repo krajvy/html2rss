@@ -1,9 +1,17 @@
 import * as fs from 'fs';
 
-export const generateFile = async (
+export const generateFile = (
   fileName: string,
   fileContent: string,
-  callback: FileWriteCallback,
-): Promise<void> => {
-  fs.writeFile(fileName, fileContent, 'utf8', callback);
+): boolean => {
+  try {
+    fs.writeFileSync(fileName, fileContent, 'utf8');
+
+    console.info(`Info: RSS feed '${fileName}' sucessfully generated.`);
+
+    return true;
+  } catch (problem) {
+    console.error(`Cannot generate RSS feed file: ${problem}`);
+    return false;
+  }
 };
