@@ -1,11 +1,21 @@
 import { JSDOM } from 'jsdom';
 
 export const parseDataFromSkolaSeberovPatecniPozdrav = (
+  record: UrlRow,
   source: string,
-): FeedItem[] => {
+): Feed => {
+  const dom = new JSDOM(source);
+
+  const channelTitle = dom.window.document.querySelector('header h1');
+
+  const channel: FeedChannel = {
+    title: record.title,
+    description: channelTitle?.textContent || record.slug,
+    link: record.url,
+  };
+
   const items: FeedItem[] = [];
 
-  const dom = new JSDOM(source);
   const records = dom.window.document.querySelectorAll(
     'main#text10_main .compositeInner .erte-text-inner p a',
   );
@@ -17,5 +27,8 @@ export const parseDataFromSkolaSeberovPatecniPozdrav = (
     });
   });
 
-  return items;
+  return {
+    channel,
+    items,
+  };
 };
