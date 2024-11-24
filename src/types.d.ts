@@ -21,7 +21,3 @@ interface Feed {
   items: FeedItem[];
   channel: FeedChannel;
 }
-
-interface FileWriteCallback {
-  (err: NodeJS.ErrnoException | null): void;
-}

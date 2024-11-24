@@ -1,11 +1,12 @@
 import { URLS } from './const.js';
 import { generateFeed } from './generator/generateFeed.js';
 import { generateFile } from './generator/generateFile.js';
+import { generateStats } from './generator/generateStats.js';
 import { getDataFromHTML, getChannelInfo } from './parser/index.js';
 
 const main = async () => {
   for await (const record of URLS) {
-    fetch(record.url)
+    await fetch(record.url)
       .then(async (response: Response) => {
         if (!response.ok) {
           throw new Error(
@@ -23,17 +24,7 @@ const main = async () => {
       })
       .then((rssFeed) => {
         if (rssFeed !== '') {
-          const callback: FileWriteCallback = (err) => {
-            if (err) {
-              throw new Error(
-                `Cannot write output RSS file for '${record.slug}: ${err.message}`,
-              );
-            }
-            console.info(
-              `Info: Page '${record.slug}' converted to RSS feed './build/${record.slug}.xml'.`,
-            );
-          };
-          generateFile(`./build/${record.slug}.xml`, rssFeed, callback);
+          generateFile(`./build/${record.slug}.xml`, rssFeed);
         } else {
           throw new Error(
             `Cannnot create output RSS for '${record.slug}': Empty file content!`,
@@ -44,6 +35,8 @@ const main = async () => {
         console.error(reason);
       });
   }
+
+  generateStats('./build');
 };
 
 await main();
