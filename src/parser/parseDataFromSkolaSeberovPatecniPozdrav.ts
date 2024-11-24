@@ -1,4 +1,5 @@
 import { JSDOM } from 'jsdom';
+import { md5 } from '../utils/md5.js';
 
 export const parseDataFromSkolaSeberovPatecniPozdrav = (
   record: UrlRow,
@@ -21,9 +22,12 @@ export const parseDataFromSkolaSeberovPatecniPozdrav = (
   );
 
   records.forEach((element) => {
+    const link = element.getAttribute('href') || '';
+
     items.push({
       title: element.textContent || '',
-      link: element.getAttribute('href') || '',
+      link: link,
+      guid: md5(link),
     });
   });
 
