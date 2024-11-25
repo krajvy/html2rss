@@ -2,5 +2,4 @@
 
 | Filename | Modified |
 | -------- | -------- |
-| robots.txt | Sun Nov 24 2024 19:47:21 GMT+0000 (Coordinated Universal Time) |
-| skolaseberov-patecnipozdrav.xml | Sun Nov 24 2024 19:47:23 GMT+0000 (Coordinated Universal Time) |
+| robots.txt | Mon Nov 25 2024 06:22:02 GMT+0000 (Coordinated Universal Time) |
