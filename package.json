@@ -14,9 +14,10 @@
     "url": "git+https://github.com/krajvy/html2rss.git"
   },
   "scripts": {
-    "build": "rm -rf dist/* && tsc",
-    "generate": "rm -rf build/* && cp public/* build && node dist/index.js",
-    "start": "npm run build && npm run generate",
+    "clean": "rm -rf dist/* && rm -rf build/*",
+    "build": "tsc",
+    "generate": "cp public/* build && node dist/index.js",
+    "start": "npm run clean && npm run build && npm run generate",
     "format-check": "prettier --check .",
     "format-fix": "prettier --write ."
   },
