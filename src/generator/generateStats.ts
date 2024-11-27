@@ -11,7 +11,7 @@ export const generateStats = (path: string): boolean => {
 
   try {
     fs.readdirSync(path).forEach((file) => {
-      if (file === '.placeholder') {
+      if (file.startsWith('.')) {
         return;
       }
 
