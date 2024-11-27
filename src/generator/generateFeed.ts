@@ -1,7 +1,16 @@
 import { JSDOM } from 'jsdom';
 
+const getRfc822Date = (date: Date | string | null = null): string => {
+  let myDate = new Date();
+
+  if (date !== null) {
+    myDate = new Date(date);
+  }
+  return myDate.toUTCString();
+};
+
 export const generateFeed = (feedData: Feed): string => {
-  const rfc822date = new Date().toUTCString();
+  const rfc822date = getRfc822Date();
 
   if (feedData.items.length > 0) {
     const dom = new JSDOM();
@@ -61,7 +70,7 @@ export const generateFeed = (feedData: Feed): string => {
       // <pubDate>
       if (feedItem.datetime) {
         const itemPubDate = document.createElement('pubDate');
-        itemPubDate.textContent = feedItem.datetime;
+        itemPubDate.textContent = getRfc822Date(feedItem.datetime);
         item.appendChild(itemPubDate);
       }
       // <guid isPermaLink="false">
