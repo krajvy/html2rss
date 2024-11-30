@@ -34,6 +34,8 @@ const main = async () => {
   }
 
   generateStats('./build');
+
+  return Promise.resolve();
 };
 
 await main();
