@@ -25,7 +25,7 @@ export const parseDataFromSkolaSeberovPatecniPozdrav = (
     const link = element.getAttribute('href') || '';
 
     items.push({
-      title: element.textContent || '',
+      title: (element.textContent || '').trim(),
       link: link,
       guid: md5(link),
     });
