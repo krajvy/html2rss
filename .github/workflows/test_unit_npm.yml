@@ -36,3 +36,6 @@ jobs:
 
       - name: Run prettier check
         run: npm run format-check
+
+      - name: NPM tests
+        run: npm run test

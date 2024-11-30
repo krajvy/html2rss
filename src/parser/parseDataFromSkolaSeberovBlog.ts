@@ -41,9 +41,9 @@ export const parseDataFromSkolaSeberovBlog = (
     }
 
     items.push({
-      title: title,
-      link: link,
-      description: description,
+      title: title.trim(),
+      link: link.trim(),
+      description: description.trim(),
       datetime: moment(datetime, 'DD.MM.YYYY HH:mm').toString(),
       guid: md5(link),
     });

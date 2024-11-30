@@ -1,6 +1,6 @@
 import { JSDOM } from 'jsdom';
 
-const getRfc822Date = (date: Date | string | null = null): string => {
+export const getRfc822Date = (date: Date | string | null = null): string => {
   let myDate = new Date();
 
   if (date !== null) {
