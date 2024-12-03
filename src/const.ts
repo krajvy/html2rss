@@ -9,6 +9,11 @@ const URLS: UrlRow[] = [
     slug: 'skolaseberov-blog',
     url: 'https://skolaseberov.edupage.org/a/blog',
   },
+  {
+    title: 'Kamenice - Zpravodaj',
+    slug: 'kamenice-zpravodaj',
+    url: 'https://www.obeckamenice.cz/zpravodaj-kamenice/archiv/',
+  },
 ];
 
 export { URLS };

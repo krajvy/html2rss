@@ -1,3 +1,4 @@
+import { parseDataFromKameniceZpravodaj } from './parseDataFromKameniceZpravodaj.js';
 import { parseDataFromSkolaSeberovBlog } from './parseDataFromSkolaSeberovBlog.js';
 import { parseDataFromSkolaSeberovPatecniPozdrav } from './parseDataFromSkolaSeberovPatecniPozdrav.js';
 
@@ -8,6 +9,9 @@ export const getDataFromHTML = (record: UrlRow, source: string): Feed => {
       break;
     case 'skolaseberov-blog':
       return parseDataFromSkolaSeberovBlog(record, source);
+      break;
+    case 'kamenice-zpravodaj':
+      return parseDataFromKameniceZpravodaj(record, source);
       break;
     default:
       break;
