@@ -1,5 +1,5 @@
 import { JSDOM } from 'jsdom';
-import moment from 'moment';
+import moment from 'moment-timezone';
 import { md5 } from '../utils/md5.js';
 
 export const parseDataFromSkolaSeberovBlog = (
@@ -44,7 +44,9 @@ export const parseDataFromSkolaSeberovBlog = (
       title: title.trim(),
       link: link.trim(),
       description: description.trim(),
-      datetime: moment(datetime, 'DD.MM.YYYY HH:mm').toString(),
+      datetime: moment(`${datetime} +0100`, 'DD.MM.YYYY HH:mm Z', true)
+        .tz('Europe/Prague')
+        .toString(),
       guid: md5(link),
     });
   });
