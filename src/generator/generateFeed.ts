@@ -93,6 +93,13 @@ export const generateFeed = (feedData: Feed): string => {
         item.appendChild(itemEnclosure);
       }
 
+      // <author>
+      if (feedItem.author) {
+        const itemAuthor = document.createElement('author');
+        itemAuthor.textContent = feedItem.author;
+        item.appendChild(itemAuthor);
+      }
+
       // Append item to channel
       channel.appendChild(item);
     });

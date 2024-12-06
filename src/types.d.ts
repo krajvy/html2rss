@@ -17,6 +17,7 @@ interface FeedItem {
   datetime?: string;
   guid?: string;
   image?: string;
+  author?: string;
 }
 
 interface Feed {
