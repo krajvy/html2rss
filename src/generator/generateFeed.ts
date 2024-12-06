@@ -1,4 +1,5 @@
 import { JSDOM } from 'jsdom';
+import { getImageContentTypeFromUrl } from '../utils/getImageContentTypeFromUrl.js';
 
 export const getRfc822Date = (date: Date | string | null = null): string => {
   let myDate = new Date();
@@ -79,6 +80,17 @@ export const generateFeed = (feedData: Feed): string => {
         itemGuid.setAttribute('isPermaLink', 'false');
         itemGuid.textContent = feedItem.guid;
         item.appendChild(itemGuid);
+      }
+
+      // <enclosure url="" type="image/jpeg" />
+      if (feedItem.image) {
+        const itemEnclosure = document.createElement('enclosure');
+        itemEnclosure.setAttribute('url', feedItem.image);
+        itemEnclosure.setAttribute(
+          'type',
+          getImageContentTypeFromUrl(feedItem.image),
+        );
+        item.appendChild(itemEnclosure);
       }
 
       // Append item to channel
