@@ -232,6 +232,8 @@ $j(document).ready(function($) {
           datetime: 'Sat Nov 02 2024 00:17:00 GMT+0100',
           description: 'aneb Učíme se venku',
           guid: '9eb11e3c858751a71873e8b5aeeb4a7c',
+          image:
+            'https://cloudt.edupage.org/cloud?z%3AJ890AWlzTifjBCaPHLn9UDfWDb3D7BFwgsqevIKS3IboNB1jYPdVHzrz4%2FbN9Z1%2FwJH2GOABpUFSOo4vsmF%2BkMki0rhZSbBvW72JMyuNICI%3D',
           link: 'https://skolaseberov.edupage.org/a/blog?eqa=c3VicGFnZT0wJnRleHQ9dGV4dCUyRnRleHQ4JndpZD10ZXh0OF9CbG9nXzEmYWlkX3RleHQ4X0Jsb2dfMT0yNCZiaWQ9dGV4dCUyRnRleHQ4',
           title: 'Když se příroda a město stávají naší učebnou',
         },
@@ -239,6 +241,8 @@ $j(document).ready(function($) {
           datetime: 'Fri Nov 01 2024 16:31:00 GMT+0100',
           description: 'aneb Jak učíme naše žáky v souvislostech',
           guid: 'a1cd8d3c1c7c8d621ae6978367b88ed4',
+          image:
+            'https://skolaseberov.edupage.org/global/pics/skins/slide1900/thumbs/fill320x240trslide58.jpeg',
           link: 'https://skolaseberov.edupage.org/a/blog?eqa=c3VicGFnZT0wJnRleHQ9dGV4dCUyRnRleHQ4JndpZD10ZXh0OF9CbG9nXzEmYWlkX3RleHQ4X0Jsb2dfMT0yMyZiaWQ9dGV4dCUyRnRleHQ4',
           title: 'Integrovaná tematická výuka',
         },
@@ -246,6 +250,8 @@ $j(document).ready(function($) {
           datetime: 'Mon Oct 28 2024 22:25:00 GMT+0100',
           description: 'aneb NA CO SE ZAMĚŘUJEME, TO ROSTE.',
           guid: '3164edb87a131e746daf50362abc51fc',
+          image:
+            'https://cloudt.edupage.org/cloud?z%3AErPrit3xWQObq8QTMPyoC6GYIMwerNVhm3ULesQnSqoo%2Bzz5B9UUMLRy03IBiBdb3StwQhdZq6PM9T6NAHLn269qlrervlH4Kc4TqzOFqWg%3D',
           link: 'https://skolaseberov.edupage.org/a/blog?eqa=c3VicGFnZT0wJnRleHQ9dGV4dCUyRnRleHQ4JndpZD10ZXh0OF9CbG9nXzEmYWlkX3RleHQ4X0Jsb2dfMT0yMiZiaWQ9dGV4dCUyRnRleHQ4',
           title:
             'Formativní hodnocení: Cesta k porozumění vlastnímu učení a k dalšímu rozvoji',
@@ -254,6 +260,8 @@ $j(document).ready(function($) {
           datetime: 'Tue Oct 22 2024 03:17:00 GMT+0200',
           description: 'aneb Jak na hodnotové vzdělávání',
           guid: '6a85a3fb86a1b178f73640e850832d57',
+          image:
+            'https://skolaseberov.edupage.org/global/pics/skins/slide1900/thumbs/fill320x240trslide45.jpg',
           link: 'https://skolaseberov.edupage.org/a/blog?eqa=c3VicGFnZT0wJnRleHQ9dGV4dCUyRnRleHQ4JndpZD10ZXh0OF9CbG9nXzEmYWlkX3RleHQ4X0Jsb2dfMT0yMSZiaWQ9dGV4dCUyRnRleHQ4',
           title: 'HODNOTY DO ŠKOL',
         },
@@ -261,6 +269,8 @@ $j(document).ready(function($) {
           datetime: 'Wed Oct 16 2024 18:54:00 GMT+0200',
           description: 'jako cesta k efektivnímu učení',
           guid: '18ed66d2802f084cb13f4c4336d2fc26',
+          image:
+            'https://cloudt.edupage.org/cloud?z%3AeO9uAiYORxOcWc4Kj7EocotiLGhZ9gRTx3V0aeI4zgVscD8tPtubZp07tgYsMo68wLl7J%2Ff8VZ5bLX%2F4ORbphJ7z%2BlSZTEEeI2gDprTHPfg%3D',
           link: 'https://skolaseberov.edupage.org/a/blog?eqa=c3VicGFnZT0wJnRleHQ9dGV4dCUyRnRleHQ4JndpZD10ZXh0OF9CbG9nXzEmYWlkX3RleHQ4X0Jsb2dfMT0yMCZiaWQ9dGV4dCUyRnRleHQ4',
           title: 'Pestré metody a konstruktivismus',
         },
@@ -268,6 +278,8 @@ $j(document).ready(function($) {
           datetime: 'Tue Oct 08 2024 23:52:00 GMT+0200',
           description: 'aneb Když se čtení stává cestou k objevování',
           guid: '7b505a7f4c4a05e381ce01edc51a17f2',
+          image:
+            'https://skolaseberov.edupage.org/global/pics/skins/slide1900/thumbs/fill320x240trslide16.jpg',
           link: 'https://skolaseberov.edupage.org/a/blog?eqa=c3VicGFnZT0wJnRleHQ9dGV4dCUyRnRleHQ4JndpZD10ZXh0OF9CbG9nXzEmYWlkX3RleHQ4X0Jsb2dfMT0xOSZiaWQ9dGV4dCUyRnRleHQ4',
           title: 'Co to znamená, když naši žáci čtou v oborech',
         },
@@ -275,6 +287,8 @@ $j(document).ready(function($) {
           datetime: 'Tue Oct 08 2024 23:52:00 GMT+0200',
           description: 'aneb Jak naši žáci objevují sílu slova',
           guid: '6852ee85e6bec0bb42f5f4fe86ecca56',
+          image:
+            'https://cloudt.edupage.org/cloud?z%3AWC4FsyjoRQ%2Fd2Vs6bQFmzGJnxb0dvSQkXEYat6oY2KzzBQNM2hSmAudNn52OBeMZyn796cOgNS0Q29qWk5zF9y3A8V9M%2BR24yYXGGQfKp1c%3D',
           link: 'https://skolaseberov.edupage.org/a/blog?eqa=c3VicGFnZT0wJnRleHQ9dGV4dCUyRnRleHQ4JndpZD10ZXh0OF9CbG9nXzEmYWlkX3RleHQ4X0Jsb2dfMT0xOCZiaWQ9dGV4dCUyRnRleHQ4',
           title: 'Pisatelská dílna',
         },
@@ -282,6 +296,8 @@ $j(document).ready(function($) {
           datetime: 'Tue Oct 08 2024 23:51:00 GMT+0200',
           description: 'aneb Proč je to pro nás důležité?',
           guid: '79e8e066de5d21a867b6a46e0092b1fd',
+          image:
+            'https://cloudt.edupage.org/cloud?z%3AFnO5zztia0gm9ntlvTM6GWkzPRmi2AKnwaGeSiLxDwSC6fzNbDAPb1RpdWKhwaRCmv5x6Yu6%2BOq%2BbFAxjo16GK4RCIbl0e%2FSoMnBnzFOJfA%3D',
           link: 'https://skolaseberov.edupage.org/a/blog?eqa=c3VicGFnZT0wJnRleHQ9dGV4dCUyRnRleHQ4JndpZD10ZXh0OF9CbG9nXzEmYWlkX3RleHQ4X0Jsb2dfMT0xNyZiaWQ9dGV4dCUyRnRleHQ4',
           title: 'Čtenářské dílny – klíč k učení',
         },
@@ -289,6 +305,8 @@ $j(document).ready(function($) {
           datetime: 'Tue Oct 08 2024 23:51:00 GMT+0200',
           description: 'aneb Jak si naše děti řídí své učení',
           guid: 'd6f3ec1c8849fea4d51d897c4675f6d1',
+          image:
+            'https://cloudt.edupage.org/cloud?z%3AJOXND6YpZhrNtHM579GE66qNVtIkaWwdOggI9%2FwsvLDGpxFDmh3tJ6HEMidndfrDsyfIMKFMyAgbSrko%2B%2FolLrxk4b8nk0IlFy8kkbom5Rw%3D',
           link: 'https://skolaseberov.edupage.org/a/blog?eqa=c3VicGFnZT0wJnRleHQ9dGV4dCUyRnRleHQ4JndpZD10ZXh0OF9CbG9nXzEmYWlkX3RleHQ4X0Jsb2dfMT0xNiZiaWQ9dGV4dCUyRnRleHQ4',
           title: 'U kormidla děti',
         },
@@ -296,6 +314,8 @@ $j(document).ready(function($) {
           datetime: 'Tue Oct 08 2024 23:51:00 GMT+0200',
           description: 'aneb Učíme se naplno a s radostí',
           guid: '469512da657265dd4ebd6831c247c123',
+          image:
+            'https://cloudt.edupage.org/cloud?z%3AaD7twGBGlG4b1ys3EhroBAAJ7YR1HsUd8vHIodnF4LsmXuY%2Frju4Ze4TS3%2Bp5Smq0jQnZHj0dUHho1Uu1agGRUahWf%2FrZwsjfWVHTEwe8nM%3D',
           link: 'https://skolaseberov.edupage.org/a/blog?eqa=c3VicGFnZT0wJnRleHQ9dGV4dCUyRnRleHQ4JndpZD10ZXh0OF9CbG9nXzEmYWlkX3RleHQ4X0Jsb2dfMT0xNSZiaWQ9dGV4dCUyRnRleHQ4',
           title: 'Tajemství motivace a radosti  v naší škole',
         },
@@ -303,6 +323,8 @@ $j(document).ready(function($) {
           datetime: 'Sun Sep 29 2024 23:19:00 GMT+0200',
           description: 'aneb Jak děláme školu místem úspěchu pro každého žáka',
           guid: '3f3f0750b2c5ecfe3fc86b3c945e0a93',
+          image:
+            'https://cloudt.edupage.org/cloud?z%3Am6xJ3x3IAHgCALqtGzpAANYLirmgdZSux%2BaWEkFu4lFb01aEnPMt%2Bz3WEALF%2FAsLPcYa0lFA6v0xbl73DIU066xFitNWwtagr%2BVsE6tSwcw%3D',
           link: 'https://skolaseberov.edupage.org/a/blog?eqa=c3VicGFnZT0wJnRleHQ9dGV4dCUyRnRleHQ4JndpZD10ZXh0OF9CbG9nXzEmYWlkX3RleHQ4X0Jsb2dfMT0xNCZiaWQ9dGV4dCUyRnRleHQ4',
           title: 'Každý žák může zářit',
         },
@@ -310,6 +332,8 @@ $j(document).ready(function($) {
           datetime: 'Wed Oct 09 2024 00:03:00 GMT+0200',
           description: 'aneb i na prázdniny s knihou',
           guid: '53b3b03e0cc5cd6aa622f175e51fc29e',
+          image:
+            'https://cloudt.edupage.org/cloud?z%3AUkDI6Xk6WpLc7mgvlmXS%2Bm1qprkU84AZYOVNebB%2BBJNEJn7E7Z7KA%2BChXbRlotEGzehiFHvmJRcIU9%2BLR3AKwQW1gZvTHNOYXLSYoz6vkCw%3D',
           link: 'https://skolaseberov.edupage.org/a/blog?eqa=c3VicGFnZT0wJnRleHQ9dGV4dCUyRnRleHQ4JndpZD10ZXh0OF9CbG9nXzEmYWlkX3RleHQ4X0Jsb2dfMT0xMyZiaWQ9dGV4dCUyRnRleHQ4',
           title: 'Čtěte denně',
         },

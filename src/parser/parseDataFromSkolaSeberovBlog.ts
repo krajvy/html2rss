@@ -40,6 +40,18 @@ export const parseDataFromSkolaSeberovBlog = (
       link = `${domain}${link}`;
     }
 
+    let image =
+      element
+        .querySelector('div ul li:nth-child(1) ul li a img')
+        ?.getAttribute('src') || '';
+    if (image && image.indexOf('http') === -1) {
+      if (image.indexOf('//') === 0) {
+        image = `https:${image}`;
+      } else {
+        image = `${domain}${image}`;
+      }
+    }
+
     items.push({
       title: title.trim(),
       link: link.trim(),
@@ -47,6 +59,7 @@ export const parseDataFromSkolaSeberovBlog = (
       datetime: moment(`${datetime} +0100`, 'DD.MM.YYYY HH:mm Z', true)
         .tz('Europe/Prague')
         .toString(),
+      image: image.trim(),
       guid: md5(link),
     });
   });
