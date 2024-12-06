@@ -50,13 +50,19 @@ describe('Should generate RSS feed with given data', () => {
           link: 'https://krajvy.github.io/dummy/title-with-image',
           image: 'https://krajvy.github.io/folder/image.png',
         },
+        {
+          title: 'Title with author',
+          description: 'Description with author',
+          link: 'https://krajvy.github.io/dummy/title-with-author',
+          author: 'Al Dente',
+        },
       ],
       channel: channelData,
     };
 
     const rfc822date = getRfc822Date();
     const result = generateFeed(feedData);
-    const expectation = `<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<rss version=\"2.0\"><channel><title>Test</title><link>https://krajvy.github.io/</link><description>This is testing.</description><language>cs</language><pubDate>${rfc822date}</pubDate><lastBuildDate>${rfc822date}</lastBuildDate><item><title>Some title</title><description>Some title</description><link>https://krajvy.github.io/dummy/some-title</link></item><item><title>Some other title</title><description>Some description</description><link>https://krajvy.github.io/dummy/some-other-title</link></item><item><title>Some different title</title><description>Some different description</description><link>https://krajvy.github.io/dummy/some-different-title</link><pubDate>Mon, 10 Jan 2022 10:35:33 GMT</pubDate></item><item><title>Some other different title</title><description>Some other different description</description><link>https://krajvy.github.io/dummy/some-other-different-title</link><pubDate>Thu, 08 Jul 2010 21:17:48 GMT</pubDate><guid isPermaLink=\"false\">abc123def456</guid></item><item><title>Title with image</title><description>Description with image</description><link>https://krajvy.github.io/dummy/title-with-image</link><enclosure url=\"https://krajvy.github.io/folder/image.png\" type=\"image/png\"/></item></channel></rss>`;
+    const expectation = `<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<rss version=\"2.0\"><channel><title>Test</title><link>https://krajvy.github.io/</link><description>This is testing.</description><language>cs</language><pubDate>${rfc822date}</pubDate><lastBuildDate>${rfc822date}</lastBuildDate><item><title>Some title</title><description>Some title</description><link>https://krajvy.github.io/dummy/some-title</link></item><item><title>Some other title</title><description>Some description</description><link>https://krajvy.github.io/dummy/some-other-title</link></item><item><title>Some different title</title><description>Some different description</description><link>https://krajvy.github.io/dummy/some-different-title</link><pubDate>Mon, 10 Jan 2022 10:35:33 GMT</pubDate></item><item><title>Some other different title</title><description>Some other different description</description><link>https://krajvy.github.io/dummy/some-other-different-title</link><pubDate>Thu, 08 Jul 2010 21:17:48 GMT</pubDate><guid isPermaLink=\"false\">abc123def456</guid></item><item><title>Title with image</title><description>Description with image</description><link>https://krajvy.github.io/dummy/title-with-image</link><enclosure url=\"https://krajvy.github.io/folder/image.png\" type=\"image/png\"/></item><item><title>Title with author</title><description>Description with author</description><link>https://krajvy.github.io/dummy/title-with-author</link><author>Al Dente</author></item></channel></rss>`;
 
     expect(result).toStrictEqual(expectation);
   });
