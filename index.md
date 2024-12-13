@@ -2,6 +2,6 @@
 
 | Filename | Modified |
 | -------- | -------- |
-| kamenice-zpravodaj.xml | Thu Dec 12 2024 06:22:25 GMT+0000 (Coordinated Universal Time) |
-| mtbiker-clanky.xml | Thu Dec 12 2024 06:22:26 GMT+0000 (Coordinated Universal Time) |
-| robots.txt | Thu Dec 12 2024 06:22:22 GMT+0000 (Coordinated Universal Time) |
+| kamenice-zpravodaj.xml | Fri Dec 13 2024 06:22:03 GMT+0000 (Coordinated Universal Time) |
+| mtbiker-clanky.xml | Fri Dec 13 2024 06:22:05 GMT+0000 (Coordinated Universal Time) |
+| robots.txt | Fri Dec 13 2024 06:22:01 GMT+0000 (Coordinated Universal Time) |
