@@ -749,7 +749,7 @@ Sentry.init({
 
     <span class="metadata-main">
                 <span>
-                                                                                                <span class="metadata-date text-nowrap">Dnes</span>
+                                                                                                <span class="metadata-date text-nowrap">6. 12. 2024</span>
                                         
                             
                     </span>
@@ -787,7 +787,7 @@ Sentry.init({
 
     <span class="metadata-main">
         <a href="https://www.mtbiker.cz/bikeri/rinanna"><img src="https://includes.mtbiker.sk//images/no_profile_photo.jpg" class="avatar " width="22" height="22" alt="" loading="lazy" /></a>        <span>
-            <span class="metadata-username"><a rel="nofollow" href="https://www.mtbiker.cz/bikeri/rinanna" class="link-user ">rinanna</a></span>                                                    <span class="bull">&bull;</span>                                <span class="metadata-date text-nowrap">Předevčírem</span>
+            <span class="metadata-username"><a rel="nofollow" href="https://www.mtbiker.cz/bikeri/rinanna" class="link-user ">rinanna</a></span>                                                    <span class="bull">&bull;</span>                                <span class="metadata-date text-nowrap">4. 12. 2024</span>
                                         
                             
                     </span>
