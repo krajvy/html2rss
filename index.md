@@ -2,8 +2,8 @@
 
 | Filename | Modified |
 | -------- | -------- |
-| kamenice-zpravodaj.xml | Mon May 19 2025 06:24:34 GMT+0000 (Coordinated Universal Time) |
-| mtbiker-clanky.xml | Mon May 19 2025 06:24:34 GMT+0000 (Coordinated Universal Time) |
-| robots.txt | Mon May 19 2025 06:24:32 GMT+0000 (Coordinated Universal Time) |
-| skolaseberov-blog.xml | Mon May 19 2025 06:24:33 GMT+0000 (Coordinated Universal Time) |
-| skolaseberov-patecnipozdrav.xml | Mon May 19 2025 06:24:33 GMT+0000 (Coordinated Universal Time) |
+| kamenice-zpravodaj.xml | Tue May 20 2025 06:24:01 GMT+0000 (Coordinated Universal Time) |
+| mtbiker-clanky.xml | Tue May 20 2025 06:24:01 GMT+0000 (Coordinated Universal Time) |
+| robots.txt | Tue May 20 2025 06:23:59 GMT+0000 (Coordinated Universal Time) |
+| skolaseberov-blog.xml | Tue May 20 2025 06:24:01 GMT+0000 (Coordinated Universal Time) |
+| skolaseberov-patecnipozdrav.xml | Tue May 20 2025 06:24:01 GMT+0000 (Coordinated Universal Time) |
