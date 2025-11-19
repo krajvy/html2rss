@@ -1,4 +1,4 @@
-import { URLS } from './const.js';
+import { USER_AGENT, URLS } from './const.js';
 import { generateFeed } from './generator/generateFeed.js';
 import { generateFile } from './generator/generateFile.js';
 import { generateStats } from './generator/generateStats.js';
@@ -7,10 +7,18 @@ import { getDataFromHTML } from './parser/getDataFromHTML.js';
 const main = async () => {
   const promises: Promise<string>[] = [];
 
+  const headers = new Headers();
+  headers.set('User-Agent', USER_AGENT);
+
   for (const record of URLS) {
+    const request = new Request(record.url, {
+      method: 'GET',
+      headers: headers,
+    });
+
     promises.push(
       new Promise((resolve, reject) => {
-        fetch(record.url)
+        fetch(request)
           .then(async (response: Response) => {
             if (!response.ok) {
               throw new Error(
@@ -41,18 +49,14 @@ const main = async () => {
     );
   }
 
-  return new Promise((resolve, reject) => {
-    Promise.all(promises)
-      .then((feed) => {
-        generateStats('./build');
-
-        resolve(feed);
-      })
-      .catch((error) => {
-        console.error(error);
-
-        reject(error);
+  return Promise.allSettled(promises).then((results) => {
+    results
+      .filter((result) => result.status === 'rejected')
+      .forEach((result) => {
+        console.error((result as PromiseRejectedResult).reason);
       });
+
+    generateStats('./build');
   });
 };
 
