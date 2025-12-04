@@ -17,11 +17,6 @@ const URLS: UrlRow[] = [
     slug: 'kamenice-zpravodaj',
     url: 'https://www.obeckamenice.cz/zpravodaj-kamenice/archiv/',
   },
-  {
-    title: 'MTBIKER magazín',
-    slug: 'mtbiker-clanky',
-    url: 'https://www.mtbiker.cz/clanky',
-  },
 ];
 
 export { USER_AGENT, URLS };
