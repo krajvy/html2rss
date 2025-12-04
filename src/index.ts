@@ -49,7 +49,7 @@ const main = async () => {
     );
   }
 
-  return Promise.allSettled(promises).then((results) => {
+  return await Promise.allSettled(promises).then((results) => {
     results
       .filter((result) => result.status === 'rejected')
       .forEach((result) => {
