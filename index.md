@@ -2,7 +2,7 @@
 
 | Filename | Modified |
 | -------- | -------- |
-| kamenice-zpravodaj.xml | Sun Dec 07 2025 06:23:57 GMT+0000 (Coordinated Universal Time) |
-| robots.txt | Sun Dec 07 2025 06:23:54 GMT+0000 (Coordinated Universal Time) |
-| skolaseberov-blog.xml | Sun Dec 07 2025 06:23:56 GMT+0000 (Coordinated Universal Time) |
-| skolaseberov-patecnipozdrav.xml | Sun Dec 07 2025 06:23:56 GMT+0000 (Coordinated Universal Time) |
+| kamenice-zpravodaj.xml | Mon Dec 08 2025 06:30:01 GMT+0000 (Coordinated Universal Time) |
+| robots.txt | Mon Dec 08 2025 06:29:58 GMT+0000 (Coordinated Universal Time) |
+| skolaseberov-blog.xml | Mon Dec 08 2025 06:30:00 GMT+0000 (Coordinated Universal Time) |
+| skolaseberov-patecnipozdrav.xml | Mon Dec 08 2025 06:30:00 GMT+0000 (Coordinated Universal Time) |
