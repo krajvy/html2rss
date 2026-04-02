@@ -28,15 +28,15 @@
   },
   "dependencies": {
     "jsdom": "^26.1.0",
-    "moment-timezone": "^0.6.0"
+    "moment-timezone": "^0.6.1"
   },
   "devDependencies": {
     "@types/jest": "^30.0.0",
     "@types/jsdom": "^27.0.0",
-    "@types/node": "^24.10.1",
-    "jest": "^30.2.0",
-    "prettier": "^3.7.4",
-    "ts-jest": "^29.4.6",
+    "@types/node": "^24.12.0",
+    "jest": "^30.3.0",
+    "prettier": "^3.8.1",
+    "ts-jest": "^29.4.9",
     "typescript": "^5.9.3"
   }
 }
