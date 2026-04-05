@@ -4,10 +4,10 @@
     "lib": ["es2020", "DOM"],
     "module": "es2022",
     "preserveConstEnums": true,
-    "moduleResolution": "node",
     "strict": true,
     "target": "es2022",
     "types": ["node", "jest"],
+    "rootDir": "./src",
     "outDir": "dist"
   },
   "include": ["src/**/*"],
