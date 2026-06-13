@@ -2,7 +2,5 @@
 
 | Filename | Modified |
 | -------- | -------- |
-| kamenice-zpravodaj.xml | Fri Jun 12 2026 10:04:50 GMT+0000 (Coordinated Universal Time) |
-| robots.txt | Fri Jun 12 2026 10:04:48 GMT+0000 (Coordinated Universal Time) |
-| skolaseberov-blog.xml | Fri Jun 12 2026 10:04:49 GMT+0000 (Coordinated Universal Time) |
-| skolaseberov-patecnipozdrav.xml | Fri Jun 12 2026 10:04:49 GMT+0000 (Coordinated Universal Time) |
+| kamenice-zpravodaj.xml | Sat Jun 13 2026 08:53:00 GMT+0000 (Coordinated Universal Time) |
+| robots.txt | Sat Jun 13 2026 08:52:58 GMT+0000 (Coordinated Universal Time) |
