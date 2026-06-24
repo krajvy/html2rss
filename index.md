@@ -2,5 +2,5 @@
 
 | Filename | Modified |
 | -------- | -------- |
-| kamenice-zpravodaj.xml | Tue Jun 23 2026 09:32:25 GMT+0000 (Coordinated Universal Time) |
-| robots.txt | Tue Jun 23 2026 09:32:23 GMT+0000 (Coordinated Universal Time) |
+| kamenice-zpravodaj.xml | Wed Jun 24 2026 09:21:33 GMT+0000 (Coordinated Universal Time) |
+| robots.txt | Wed Jun 24 2026 09:21:31 GMT+0000 (Coordinated Universal Time) |
