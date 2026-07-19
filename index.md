@@ -2,4 +2,6 @@
 
 | Filename | Modified |
 | -------- | -------- |
-| robots.txt | Sat Jul 18 2026 07:42:42 GMT+0000 (Coordinated Universal Time) |
+| robots.txt | Sun Jul 19 2026 08:10:00 GMT+0000 (Coordinated Universal Time) |
+| skolaseberov-blog.xml | Sun Jul 19 2026 08:10:02 GMT+0000 (Coordinated Universal Time) |
+| skolaseberov-patecnipozdrav.xml | Sun Jul 19 2026 08:10:01 GMT+0000 (Coordinated Universal Time) |
