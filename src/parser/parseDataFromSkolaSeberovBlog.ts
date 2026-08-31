@@ -26,7 +26,7 @@ export const parseDataFromSkolaSeberovBlog = (
   records.forEach((element) => {
     const subElement = element.querySelector('div ul li:nth-child(2)');
     const title =
-      subElement?.querySelector('ul li:nth-child(1)>a h3')?.textContent || '';
+      subElement?.querySelector('ul li:nth-child(1)>a h2')?.textContent || '';
     let link =
       subElement?.querySelector('ul li:nth-child(1)>a')?.getAttribute('href') ||
       '';
