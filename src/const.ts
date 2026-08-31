@@ -15,7 +15,7 @@ const URLS: UrlRow[] = [
   {
     title: 'Kamenice - Zpravodaj',
     slug: 'kamenice-zpravodaj',
-    url: 'https://www.obeckamenice.cz/zpravodaj-kamenice/archiv/',
+    url: 'https://www.kamenice.cz/archiv-vydani-zpravodaje',
   },
 ];
 
